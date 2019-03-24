@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\GarmentDAO.cs" />
     <Compile Include="Garment.cs">
       <DependentUpon>WardrobeDataModel.tt</DependentUpon>
     </Compile>
@@ -58,6 +59,7 @@
     <Compile Include="GarmentWear.cs">
       <DependentUpon>WardrobeDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="IDAO\IGarmentDAO.cs" />
     <Compile Include="Outfit.cs">
       <DependentUpon>WardrobeDataModel.tt</DependentUpon>
     </Compile>
@@ -84,10 +86,7 @@
       <DependentUpon>WardrobeDataModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-    <Folder Include="IDAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EntityDeploy Include="WardrobeDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
