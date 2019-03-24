@@ -285,6 +285,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wardrobe.Data\Wardrobe.Data.csproj">
+      <Project>{07031afb-c80c-47ee-ac86-f38cfdcfabcc}</Project>
+      <Name>Wardrobe.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wardrobe.Services\Wardrobe.Services.csproj">
+      <Project>{fc626de5-6cbf-4860-bd7d-80b47a32f83e}</Project>
+      <Name>Wardrobe.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

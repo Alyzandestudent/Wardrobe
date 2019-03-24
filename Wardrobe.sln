@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe", "Wardrobe\Wardrobe.csproj", "{291A4FD8-9FC7-4F2C-A884-C8A49F28156D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe.Services", "Wardrobe.Services\Wardrobe.Services.csproj", "{FC626DE5-6CBF-4860-BD7D-80B47A32F83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardrobe.Data", "Wardrobe.Data\Wardrobe.Data.csproj", "{07031AFB-C80C-47EE-AC86-F38CFDCFABCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{291A4FD8-9FC7-4F2C-A884-C8A49F28156D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291A4FD8-9FC7-4F2C-A884-C8A49F28156D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291A4FD8-9FC7-4F2C-A884-C8A49F28156D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC626DE5-6CBF-4860-BD7D-80B47A32F83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC626DE5-6CBF-4860-BD7D-80B47A32F83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC626DE5-6CBF-4860-BD7D-80B47A32F83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC626DE5-6CBF-4860-BD7D-80B47A32F83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07031AFB-C80C-47EE-AC86-F38CFDCFABCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07031AFB-C80C-47EE-AC86-F38CFDCFABCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07031AFB-C80C-47EE-AC86-F38CFDCFABCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07031AFB-C80C-47EE-AC86-F38CFDCFABCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
