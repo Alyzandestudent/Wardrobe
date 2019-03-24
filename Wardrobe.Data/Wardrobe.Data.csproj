@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,11 +49,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Garment.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentOutfit.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentWear.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Outfit.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WardrobeDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WardrobeDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Wears.cs">
+      <DependentUpon>WardrobeDataModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAO\" />
     <Folder Include="IDAO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="WardrobeDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WardrobeDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="WardrobeDataModel.edmx.diagram">
+      <DependentUpon>WardrobeDataModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WardrobeDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>WardrobeDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>WardrobeDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="WardrobeDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WardrobeDataModel.edmx</DependentUpon>
+      <LastGenOutput>WardrobeDataModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
