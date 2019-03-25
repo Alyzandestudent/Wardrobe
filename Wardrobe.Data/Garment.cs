@@ -33,8 +33,8 @@ namespace Wardrobe.Data
         public Nullable<int> GarmentWear { get; set; }
         public Nullable<int> Formality { get; set; }
         public Nullable<int> Mending { get; set; }
-        public string Type { get; set; }
         public string ImagePath { get; set; }
+        public string GarmentType { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GarmentOutfit> GarmentOutfit1 { get; set; }

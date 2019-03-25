@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="b8041046Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="b8041046Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Garment">
           <Key>
             <PropertyRef Name="Garment_ID" />
@@ -21,7 +21,7 @@
           <Property Name="GarmentWear" Type="int" />
           <Property Name="Formality" Type="int" />
           <Property Name="Mending" Type="int" />
-          <Property Name="Type" Type="varchar" MaxLength="50" />
+          <Property Name="GarmentType" Type="varchar" MaxLength="50" />
           <Property Name="ImagePath" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="GarmentOutfit">
@@ -171,8 +171,7 @@
             <End Role="Wears" EntitySet="Wears" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="b8041046Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -192,10 +191,10 @@
           <Property Name="GarmentWear" Type="Int32" />
           <Property Name="Formality" Type="Int32" />
           <Property Name="Mending" Type="Int32" />
-          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ImagePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="GarmentOutfit1" Relationship="Self.FK_GarmentOutfit" FromRole="Garment" ToRole="GarmentOutfit" />
           <NavigationProperty Name="GarmentWear1" Relationship="Self.FK_GarmentWear" FromRole="Garment" ToRole="GarmentWear" />
+          <Property Name="GarmentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="GarmentOutfit">
           <Key>
@@ -363,6 +362,7 @@
           <EntitySetMapping Name="Garment">
             <EntityTypeMapping TypeName="b8041046Model.Garment">
               <MappingFragment StoreEntitySet="Garment">
+                <ScalarProperty Name="GarmentType" ColumnName="GarmentType" />
                 <ScalarProperty Name="Garment_ID" ColumnName="Garment_ID" />
                 <ScalarProperty Name="GarmentOutfit" ColumnName="GarmentOutfit" />
                 <ScalarProperty Name="Season" ColumnName="Season" />
@@ -375,7 +375,6 @@
                 <ScalarProperty Name="GarmentWear" ColumnName="GarmentWear" />
                 <ScalarProperty Name="Formality" ColumnName="Formality" />
                 <ScalarProperty Name="Mending" ColumnName="Mending" />
-                <ScalarProperty Name="Type" ColumnName="Type" />
                 <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
               </MappingFragment>
             </EntityTypeMapping>
