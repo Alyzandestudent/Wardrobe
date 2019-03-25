@@ -8,5 +8,7 @@ namespace Wardrobe.Data.IDAO
 {
     public interface IGarmentDAO
     {
+         IList<Garment> GetGarments();
+
     }
 }
