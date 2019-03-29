@@ -1,0 +1,122 @@
+﻿@model Wardrobe.Data.Garment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Garment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GarmentOutfit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GarmentOutfit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weather)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weather)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Features)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Features)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GarmentWear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GarmentWear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Formality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Formality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mending)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mending)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GarmentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GarmentType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Garment_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
