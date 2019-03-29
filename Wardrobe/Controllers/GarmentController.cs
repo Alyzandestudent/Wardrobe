@@ -18,7 +18,7 @@ namespace Wardrobe.Controllers
         // GET: Garment
         public ActionResult Garments()
         {
-            return View("GetGarments", _garmentService.GetGarments());
+            return View("index", _garmentService.GetGarments());
         }
 
         // GET: Garment/Details/5

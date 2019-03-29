@@ -269,11 +269,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Garment\GetGarments.cshtml" />
     <Content Include="Views\Garment\Create.cshtml" />
     <Content Include="Views\Garment\Edit.cshtml" />
     <Content Include="Views\Garment\Details.cshtml" />
     <Content Include="Views\Garment\Delete.cshtml" />
+    <Content Include="Views\Garment\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
