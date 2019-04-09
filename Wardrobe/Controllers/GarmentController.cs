@@ -24,7 +24,7 @@ namespace Wardrobe.Controllers
         // GET: Garment/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View("Details");
         }
 
         // GET: Garment/Create

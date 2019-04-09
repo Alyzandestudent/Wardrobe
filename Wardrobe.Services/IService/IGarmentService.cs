@@ -9,5 +9,6 @@ namespace Wardrobe.Services.IService
     public interface IGarmentService
     {
         IList<Wardrobe.Data.Garment> GetGarments();
+        
     }
 }

@@ -274,6 +274,7 @@
     <Content Include="Views\Garment\Details.cshtml" />
     <Content Include="Views\Garment\Delete.cshtml" />
     <Content Include="Views\Garment\index.cshtml" />
+    <Content Include="Views\Garment\GetGarment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

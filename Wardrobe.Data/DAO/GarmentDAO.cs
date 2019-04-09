@@ -14,7 +14,7 @@ namespace Wardrobe.Data.DAO
         {
             _context = new b8041046Entities();
         }
-  public IList<Garment> GetGarments()
+        public IList<Garment> GetGarments()
         {
             IQueryable<Garment> _garments;
             _garments = from Garment
@@ -22,6 +22,7 @@ namespace Wardrobe.Data.DAO
                         select Garment;
             return _garments.ToList<Garment>();
         }
-    }
  
+ 
+    }
 }

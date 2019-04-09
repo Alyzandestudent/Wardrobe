@@ -12,7 +12,7 @@ namespace Wardrobe.Services.Service
     public class GarmentService : Wardrobe.Services.IService.IGarmentService
 
     {
-        private IGarmentDAO _garmentDAO; 
+        private IGarmentDAO _garmentDAO;
         public GarmentService()
         {
             _garmentDAO = new GarmentDAO();
@@ -21,5 +21,6 @@ namespace Wardrobe.Services.Service
         {
             return _garmentDAO.GetGarments();
         }
+
     }
 }
