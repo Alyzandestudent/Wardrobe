@@ -17,9 +17,9 @@ namespace Wardrobe.Services.Service
         {
             _garmentDAO = new GarmentDAO();
         }
-        public IList<Garment> GetGarments()
+        public IList<Garment> GetAllGarments()
         {
-            return _garmentDAO.GetGarments();
+            return _garmentDAO.GetAllGarments();
         }
 
     }

@@ -16,7 +16,7 @@ namespace Wardrobe
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Garment", action = "Garments", id = UrlParameter.Optional }
+                defaults: new { controller = "GetAllGarments", action = "GetAllGarments", id = UrlParameter.Optional }
             );
         }
     }

@@ -8,7 +8,7 @@ namespace Wardrobe.Services.IService
 {
     public interface IGarmentService
     {
-        IList<Wardrobe.Data.Garment> GetGarments();
+        IList<Wardrobe.Data.Garment> GetAllGarments();
         
     }
 }
